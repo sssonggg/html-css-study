@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../common.css"> 
+</head>
+
+    <style>
+        section {
+            /* background: coral; */
+            width: 73%;
+            margin: 50px auto;
+            border: 3px groove rgb(101, 141, 156);
+        }
+        section h1{
+            color: rgb(53, 53, 53);
+            font-size: 25px;
+            font-weight: bold;
+            background: lightgray;
+            padding: 13px;
+            text-align: center;
+            font-family: '궁서', '궁서체', sans-serif;
+        }
+        section .h2{
+            color: white;
+            font-size: 11px;
+            font-weight: 400;
+            background: rgb(49, 49, 49);
+            text-align: center;
+            font-family: '고딕', '맑은고딕', sans-serif;
+            padding: 6px;
+        }
+        section .h2 span{
+            font-size: 12px;
+            color: yellow;
+        }
+        section .box{
+            padding: 20px 0;
+            background-color: #727272;
+        }
+        section .box li{
+            color: rgb(49, 49, 49);
+            width: 23.75%;
+            margin-right: 1%;
+            height: 240px;
+            padding: 5px;
+            border: 1px solid #ffffff;
+            float: left;
+        }
+        section .box li:first-child{
+            margin-left: 1%;
+        }
+        section .box li .boxi{
+            height: 120px;
+            border: 1px solid #ffffff;
+        }
+        section .box li p{
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+            margin-top: 11px;
+            padding: 0 5px;
+            line-height: 1.2;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box1 .boxi{
+            background: url(../../img/tulip.jpg) no-repeat center / cover;
+        }
+        #box2{
+            background-color: hotpink;
+        }
+        #box2 .boxi{
+            background: url(../../img/jebi.jpg) no-repeat center / cover;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box3 .boxi{
+            background: url(../../img/hobak.jpg) no-repeat center / cover;
+        }
+        #box4{
+            background-color: yellow;
+        }
+        #box4 .boxi{
+            background: url(../../img/sunflower.jpg) no-repeat center / cover;
+        }
+        
+    </style>
+<body>
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <div class="h2">
+            사람들은 아마 자신에게 
+            <span>자신감을 복돋워 주는</span> 
+            표정 있는 꽃들을 선호할 것이다.
+        </div>
+        <ul class="box clearfix">
+            <li id="box1">
+                <div class="boxi"></div>
+                <p>
+                너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="box2">
+                <div class="boxi"></div>
+                <p>
+                드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="box3">
+                <div class="boxi"></div>
+                <p>
+                색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                매우 완숙한 이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="box4">
+                <div class="boxi"></div>
+                <p>
+                태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                속하며 송이가 적어야 제격이다.
+                </p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

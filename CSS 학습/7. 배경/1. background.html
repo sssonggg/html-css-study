@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 50px auto 0;
+            /* 배경속성 */
+            background-color: lightpink;
+            /* 배경이미지는 overflow:hidden 을 알아서 작동 */
+            background-image: url('../../img/sky.jpg');
+            /* 배경사이즈 조정   w  h */
+            background-size: 200px 130px;
+            background-repeat: no-repeat;
+            /* 배경이미지 위치    x축  y축 */
+            background-position: 30px 30px;
+            /* 한번에 정하기 : 다른건 순서상관x 위치/사이즈 */
+            background: url('../../img/sky.jpg') thistle no-repeat 
+            30px 30px / 200px 130px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>

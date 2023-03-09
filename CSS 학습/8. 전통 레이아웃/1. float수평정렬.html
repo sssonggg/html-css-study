@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background: rgb(255, 234, 113);
+            border: 4px solid rgb(236, 173, 36);
+            font-size: 50px;
+            font-weight: 700;
+            margin: 10px;
+
+            /* 박스 수평 정렬 */
+            float: left;
+            border-radius: 25px;
+
+            /* 텍스트 정중앙 정렬 */
+            text-align: center;
+            line-height: 150px;
+            
+        }
+        /* 
+            3열 -> 3n+1 
+            x열 -> xn+1
+        */
+        .box:nth-child(6n+1)      
+         {
+            /* 수평 정렬 해제 */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        
+    </div>
+</body>
+</html>

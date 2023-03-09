@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 중첩float문제 해결방법(공식이라고 보면 됨.) */
+        /* 해제용 클래스 */
+        .clearfix::after {   
+            content: '';
+            display: block;
+            clear:both;
+        }
+        .ct{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid;
+            margin: 20px;
+        }
+        .container1{
+            border-color:rgb(73, 73, 73);
+            /* overflow: hidden; */
+        }
+        .container2{
+            border-color: blueviolet;
+               
+        }
+        .container3{
+            border-color: skyblue;
+        }
+
+        .box{
+            width: 200px;
+            height: 150px;
+            border: 3px dashed olivedrab;
+            margin: 10px;
+            background: rgb(127, 253, 110);
+            border-radius: 20px;
+            float: left;
+        }
+     /* .vbox{
+        clear: left;
+     } */
+
+    </style>
+</head>
+<body>
+    <div class="ct container1 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="vbox"></div> -->
+    </div>
+    <div class="ct container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="ct container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
