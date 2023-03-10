@@ -1,0 +1,125 @@
+@import url(../../common.css);
+
+body{
+    background: #414141;
+}
+/* wrapper */
+#wrapper {
+    width: 70%;
+    background: #ffffff;
+    font-family: '맑은고딕', '고딕체', '고딕';
+}
+#wrapper header {
+    color: #ffffff;
+    background: orange;
+    padding: 20px auto 10px;
+    text-align: center;
+}
+#wrapper header h1 {
+    font-size: 6em;
+}
+#wrapper header h1 span {
+    padding: 10px;
+    font-size: 0.2em;
+    display: block;
+}
+#wrapper header h2 {
+    color: #000;
+    font-weight: 500;
+    background: rgb(155, 155, 155);
+    padding: 5px;
+}
+/* container */
+/* con > side-menu */
+.container {
+}
+.container .side-menu {
+    height: 540px;
+    float: left;
+    width: 25%
+}
+
+.container .side-menu h3 {
+    padding: 10px;
+    background: rgb(156, 0, 0);
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    float: left;
+}
+.container .side-menu ul{
+    margin-top: 40px;
+}
+.container .side-menu ul li{
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+
+/* con > main-content */
+.container .main-content{
+    color: rgb(0, 25, 78);
+    width: 50%;
+    background: rgb(209, 209, 209);
+    float: left;
+}
+.container .main-content .art-piece{
+    margin: 15px 5px;
+}
+.container .main-content .art-piece h4{
+    padding: 5px;
+    color: #ffffff;
+    font-size: 1.1em;
+    background: rgb(0, 25, 78);
+
+}
+.container .main-content .art-piece .artist{
+    font-weight: bold;
+    padding: 10px 0;
+}
+.container .main-content .art-piece .detail{
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+
+/* aside. banner */
+.banner {
+    width: 25%;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    font-size: 1.1em;
+    float: right;
+}
+.banner span {
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 10px;
+}
+.banner .all{
+    color: gray;
+}
+.banner .love{
+    color:orange;
+}
+.banner strong{
+    font-weight: 600;
+}
+.banner .link {
+    text-decoration: none;
+}
+.banner .link a{
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+    display: block;
+}
+
+/* footer */
+footer{
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    background: rgb(0, 25, 78);
+}

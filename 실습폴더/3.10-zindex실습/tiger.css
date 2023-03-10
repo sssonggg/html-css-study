@@ -1,0 +1,97 @@
+@import url(../../common.css);
+
+body{
+    background: #414141;
+}
+#wrapper {
+    width: 1100px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+/* #p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
+}*/
+/* header */
+div header {
+    width: 80%;
+    background: rgb(9, 49, 82);
+    padding: 20px 25px;
+    z-index: 5;
+}
+header h1 {
+    text-align: center;
+    /* border: 1px solid #000; */
+    font-family: '휴먼모음T', '휴먼엑스포',fantasy;
+    font-size: 1.3em;
+    color:rgb(194, 194, 34)
+    
+}
+#wrapper header h1 strong{
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+#wrapper header h1 span{
+    font-size: 2em;
+    font-weight: bold;
+}
+#wrapper header h1 em{
+    font-size: 2.8em;
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+}
+
+/* section */
+/* container */
+.container{
+    width: 80%;
+    font-family: '굴림체', '굴림', serif;
+    z-index: 2;
+}
+.container .menu {
+    width: 20%;
+    height: 563px;
+    padding: 20px;
+    background: lightgray;
+    float: left;
+}
+.container .menu li {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.container .content {
+    background: white;
+    height: 563px;
+    width: 80%;
+    float: left;
+    line-height: 1.1;
+}
+.container .content h2 {
+    /* border: 1px solid #000; */
+    font-family: cursive;
+    color: yellow;
+    font-size: 1.3em;
+    background: rgb(158, 16, 16);
+    padding: 10px 0 10px 20px;
+}
+.container .content p {
+    /* background: #000; */
+    padding: 20px;
+    text-align: justify;
+}
+
+/* footer */
+footer {
+    /* border: 1px solid #000; */
+    width: 80%;
+    height: 60px;
+    background: #8a8a8a;
+    padding: 20px 30px 0;
+    z-index: 1;
+}
