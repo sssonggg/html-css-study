@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 4px solid #000;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+        }
+        .item{
+            box-sizing: border-box;
+            width: 150px;
+            height: 100px;
+            background: red;
+            border: 4px solid orange;
+            border-radius: 20px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item1{
+            /* flex-grow 는 basis의 기본값을 고정된 높이값으로 잡음 */
+            /* flex-grow: 1; 
+            flex-basis: 0; */
+            /* flex 단축속성은 basis를 0으로 잡음. 그래서 비율(grow값만 넣어주면 됨) */
+            flex:1;
+        }
+        .item2{
+            /* flex-grow: 2;
+            flex-basis: 0; */
+            flex:4;
+        }
+        .item3{
+            /* flex-grow: 1;
+            flex-basis: 0; */
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>

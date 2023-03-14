@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+        }
+        /* 애니메이션 걸기(2번) */
+        .box:hover{ 
+            animation-name : grow-up;
+            animation-duration: 1s;
+            /* 애니메이션 반복 횟수 */
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+
+            /* 단축 속성 name, duration은 필수속성*/
+            animation: grow-up 2s 3 1s linear;
+        }
+        /* 애니메이션 효과 만들기(1번) */
+        @keyframes grow-up {
+            0% {
+                width: 100px;
+                background: yellowgreen;
+            }
+            50% {
+                width: 300px;
+                background: orange;
+            }
+            100%{
+                width: 600px;
+                background: violet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
